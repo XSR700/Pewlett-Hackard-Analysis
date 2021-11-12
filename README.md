@@ -5,6 +5,15 @@ This analysis uses Sequel (SQL) programming tool to help review employee databas
 
 ## Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
+### Point 1:
+
+### Point 2:
+
+### Point 3:
+
+### Point 4:
+
+
 ## Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
