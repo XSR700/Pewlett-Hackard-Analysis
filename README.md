@@ -24,6 +24,9 @@ There are 1549 employees who are eligable for the Mentorship Program.
 
 ### Point 4:
 
+Of all the employees who are eligable for the Mentorship Program, the majority hold the Senior Staff position. 
+
+![Mentorship Count by Title](https://github.com/XSR700/Pewlett-Hackard-Analysis/blob/main/Mentorship%20Count%20By%20Title.PNG)
 
 ## Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 
