@@ -7,7 +7,13 @@ This analysis uses Sequel (SQL) programming tool to help review employee databas
 
 ### Point 1:
 
+Acording to retiring_titles.csv, the majority of employees who are retiring hold a Senior Engineer title.
+
+
+
 ### Point 2:
+
+The second most held title from employees who are retiring is Senior Staff. The difference between retiring Senior Engineers and Senior Staff is 1,160 employees which is a relativly close statistic in comparison. 
 
 ### Point 3:
 
