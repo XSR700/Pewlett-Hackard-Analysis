@@ -130,7 +130,7 @@ GROUP BY de.dept_no
 ORDER BY de.dept_no;
 
 SELECT * FROM salaries
-ORDER BY to_date DESC;
+ORDER BY to_date;
 
 SELECT e.emp_no,
     e.first_name,
@@ -173,3 +173,90 @@ INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
+
+
+-- MODULE 7 CHALLENGE: DELIVERABLE 1-------------------------------------------------------------------------------------------------------------
+
+SELECT employees.emp_no, 
+employees.first_name, 
+employees.last_name 
+FROM employees;
+
+SELECT titles.title, 
+titles.from_date,
+titles.to_date
+FROM titles;
+
+SELECT employees.emp_no, 
+employees.first_name, 
+employees.last_name,
+titles.title, 
+titles.from_date,
+titles.to_date
+INTO retirement_titles
+FROM employees
+LEFT JOIN titles
+ON (employees.emp_no = titles.emp_no)
+WHERE (employees.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY emp_no;
+
+SELECT * FROM retirement_titles;
+
+DROP TABLE retirement_titles;
+
+--Note: There are duplicate entries for some employees because they 
+--have switched titles over the years. Use the following instructions 
+--to remove these duplicates and keep only the most recent title of 
+--each employee.
+
+-- Use Dictinct with Orderby to remove duplicate rows
+SELECT DISTINCT ON (emp_no) emp_no,
+first_name,
+last_name,
+title,
+from_date,
+to_date
+INTO clean_retirement_titles
+FROM retirement_titles
+ORDER BY emp_no, from_date DESC;
+
+SELECT * FROM clean_retirement_titles;
+
+SELECT DISTINCT ON (emp_no) emp_no,
+first_name,
+last_name,
+title
+INTO unique_titles
+FROM clean_retirement_titles
+ORDER BY emp_no, to_date DESC;
+
+SELECT * FROM unique_titles;
+
+SELECT COUNT(title),
+title
+INTO retiring_titles
+FROM unique_titles
+GROUP BY title 
+ORDER BY COUNT(title) DESC;
+
+SELECT * FROM retiring_titles;
+
+--DELIVERABLE 2--------------------------------------------------------------------------------------------------------------
+
+
+SELECT DISTINCT ON (employees.emp_no) employees.emp_no,
+employees.first_name,
+employees.last_name,
+employees.birth_date,
+dept_emp.from_date,
+dept_emp.to_date,
+titles.title
+INTO silver_tsunami
+FROM employees
+JOIN dept_emp
+ON (employees.emp_no = dept_emp.emp_no)
+JOIN titles
+ON (employees.emp_no = titles.emp_no)
+WHERE (employees.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+	 AND (dept_emp.to_date = '9999-01-01')
+ORDER BY emp_no;
