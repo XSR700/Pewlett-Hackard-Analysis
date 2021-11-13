@@ -32,4 +32,6 @@ Of all the employees who are eligable for the Mentorship Program, the majority h
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
+A total of 90,398 employees will soon retire from PH. This includes employees who are born between 1952 and 1955. The current retirement age in the U.S. is at 66 years old, threfore all the employees in this pool are eligable for retirement. The vast majority of 
+
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
