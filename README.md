@@ -9,6 +9,7 @@ This analysis uses Sequel (SQL) programming tool to help review employee databas
 
 Acording to retiring_titles.csv, the majority of employees who are retiring hold a Senior Engineer title.
 
+![Retiring Titles](https://github.com/XSR700/Pewlett-Hackard-Analysis/blob/main/retiring%20titles.PNG)
 
 
 ### Point 2:
