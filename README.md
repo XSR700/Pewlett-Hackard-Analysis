@@ -41,3 +41,8 @@ We see that there is a total of 105,710 engineers. If we subtract 14,221 enginee
 As for the rest of the titles in the list, we dont see who can can be shifted around or promoted to fill these gaps. After adding up all of the employees who are retiring in these positions (Engineer + Staff + Technique Leader + Assistant Engineer + Manager) we get a result of how many roles that will need to be filled. Therefore we can conclude that at least 32,728 positions will need to be filled. 
 
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+Acording to the Mentorship Elegibility.csv there is not enough retirement ready employees to mentor the next generation. The query result below illustrates all the eligable mentor count by title. We see that majority of them are Senior Staff and Engineers. Senior Engineers are ordered third with a wide difference. Idelly a Senior Engineer would mentor a lower lever engineer but there is 1 Senior Engineer for every 625 engineer. Even If all the mentor engineer were promoted that would leave 1 for every 157. This is unpracticale and inefficient to mentor this many employees. PH should consider increasing the eligibility of the mentorship program.
+
+
+![Mentorship Count by Title](https://github.com/XSR700/Pewlett-Hackard-Analysis/blob/main/Mentorship%20Count%20By%20Title.PNG)
