@@ -18,6 +18,10 @@ The second most held title from employees who are retiring is Senior Staff. The 
 
 ### Point 3:
 
+There are 1549 employees who are eligable for the Mentorship Program. 
+
+![Mentorship Count](
+
 ### Point 4:
 
 
